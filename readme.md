@@ -6,4 +6,13 @@
 	<br>
 </h1>
 
-![](./Houndgo.svg)
+## 开发中
+
+请勿投人生产
+
+
+## Install
+
+```
+go get -u github.com/houndgo/houndgo/...
+```
