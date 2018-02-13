@@ -23,6 +23,7 @@ func Mkdir(name string) {
 	err := os.Mkdir(dir+path+name, os.ModePerm) //在当前目录下生成目录
 	if err != nil {
 		fmt.Println(err)
+	} else {
+		fmt.Println("mkdir " + dir + path + name)
 	}
-	fmt.Println("mkdir " + dir + path + name)
 }
