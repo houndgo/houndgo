@@ -24,8 +24,8 @@ func Mkdir(name string) {
 		path = "/"
 	}
 	fmt.Println(path)
-	dir, _ := os.Getwd()                        //当前的目录
-	err := os.Mkdir(dir+path+name, os.ModePerm) //在当前目录下生成目录
+	dir, _ := os.Getwd()                           //当前的目录
+	err := os.MkdirAll(dir+path+name, os.ModePerm) //在当前目录下生成目录
 	if err != nil {
 		fmt.Println(err)
 	} else {
